@@ -1,0 +1,124 @@
+package com.company;
+
+public class Main{
+        public static void main(String[] args) {
+            System.out.print("Hello");
+            System.out.println(" World!");
+            System.out.println(" ");
+        /////////////////////1/////////////////////
+            System.out.println("Hello World!");
+            System.out.println("Hello World!");
+            System.out.println("Hello World!");
+            System.out.println(" ");
+        /////////////////////2/////////////////////
+            int a1=2020,b1=99;
+            System.out.println(a1-b1);
+            System.out.println(" ");
+        /////////////////////3/////////////////////
+            int x1 = 27;
+            int y1 = 15;
+            //y1 = x1 - y1;
+            // y1 = y1 - x1;
+            // y1 = y1 + x1;
+            // y1 = y1 + x1;
+            y1 = x1 / y1;
+            // y1 = y1 / x1;
+            // y1 = y1 * x1;
+            x1 = x1 - y1;
+            y1 = y1 - x1;
+            System.out.println(Math.abs(x1));
+            System.out.println(Math.abs(y1));
+            System.out.println(" ");
+        /////////////////////4/////////////////////
+            int a2 = 3;
+            int b2 = 9;
+            //System.out.print("девять");
+            System.out.print(b2);
+            System.out.print(" умножить ");
+            System.out.print("на ");
+            System.out.print(a2);
+            //System.out.print("три");
+            //System.out.print(" не ");
+            //System.out.print("будет ");
+            System.out.print(" равно ");
+            //System.out.print("пятнадцать");
+            //System.out.print(21);
+            System.out.println((int) Math.pow(3, 3));
+            System.out.println(" ");
+        /////////////////////5/////////////////////
+            printCircleLength(5);
+            System.out.println(" ");
+        /////////////////////6/////////////////////
+            System.out.println(convertCelsiusToFahrenheit(41));
+            System.out.println(" ");
+        /////////////////////7/////////////////////
+            System.out.println(getMetreFromCentimetre(243));
+            System.out.println(" ");
+        /////////////////////8/////////////////////
+            System.out.println(sumDigitsInNumber(546));
+            System.out.println(" ");
+        /////////////////////9/////////////////////
+            System.out.println(clock10());
+            System.out.println(" ");
+        /////////////////////10/////////////////////
+            Main pool = new Main();
+            long poolVolume = pool.getVolume(25, 5, 2);
+            System.out.println(poolVolume);
+            System.out.println(" ");
+        /////////////////////11/////////////////////
+            String apple = "Яблоко";
+            String porridge = "Каша";
+            String sausage = "Колбаса";
+            String peach = "Персик";
+            System.out.println(apple);
+            System.out.println(peach);
+            System.out.println(" ");
+        /////////////////////12/////////////////////
+            System.out.println(getWeight(888));
+            System.out.println(" ");
+        /////////////////////13/////////////////////
+            int a = 1;
+            int b = 3;
+            int c = 9;
+            int d = 27;
+            int result = - a + b - c + d;
+            System.out.println(result);
+            System.out.println(" ");
+        /////////////////////14/////////////////////
+            int number=4;
+            int pow =number*number;
+            System.out.println(pow);
+        /////////////////////15/////////////////////
+        }
+        public static void printCircleLength(double r){//6
+            double l=2*(3.14)*r;
+            System.out.println(l);
+        }
+        public static double convertCelsiusToFahrenheit(int TC){//7
+            double TF = (9/5.d)*TC+32;
+            return TF;
+        }
+        public static int getMetreFromCentimetre(int centimetre){//8
+            int metr = centimetre/100;
+            return metr;
+        }
+        public static int sumDigitsInNumber(int number){//9
+            int firstnumb = number/100;
+            int secondnumb = (number-(100*firstnumb))/10;
+            int thirdnumb = (number-(100*firstnumb))-(10*secondnumb);
+            return firstnumb+secondnumb+thirdnumb;
+        }
+        public static int clock10(){//10
+            int a=900,b=930;
+            int time =(b-a)*60;
+            return time;
+        }
+        public static long getVolume(int a3,int b3,int c3){//11
+            long S=a3*b3*c3;
+            return S;
+        }
+        public static double getWeight(int newton){//13
+            double gravity =newton*(0.17);
+            return gravity;
+        }
+}
